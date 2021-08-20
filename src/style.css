@@ -1,0 +1,119 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Mono', sans-serif;
+}
+
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #ad5389, #3c1053);
+}
+
+.login-container {
+    min-height: 400px;
+    width: 400px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-block: 10px;
+    box-sizing: border-box;
+    box-shadow: 5px 5px 15px 10px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+    background-color: white;
+}
+
+.login-title {
+    margin-bottom: 4rem;
+    margin-top: 3rem;
+}
+
+.input-field {
+    position: relative;
+    margin-bottom: 2.5rem;
+}
+
+.input-field .underline::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.input-field .underline::after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    bottom: -1px;
+    left: 0;
+    background: #000;
+    transform: scale(0);
+    transition: all 0.2s ease;
+    background: linear-gradient(to right, #ad5389, #3c1053);
+}
+
+.input-field input:focus ~ .underline::after {
+    transform: scale(1);
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgba(0, 0, 0, 0.7);
+    width: 16rem;
+}
+
+.login-submit {
+    height: 50px;
+    width: 50%;
+    background: linear-gradient(to right, #ad5389, #3c1053);
+    color: white;
+    border: unset;
+    outline: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+    cursor: pointer;
+}
+
+.login-submit:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+}
+
+.forgot-password {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: purple;
+    margin-bottom: 2.5rem;
+}
+
+.line {
+    content: "";
+    margin-block: 15px;
+    height: 1px;
+    width: 40%;
+    background: #000;
+}
+
+.create-account {
+    margin-bottom: 3rem;
+    font-size: 1.1rem;
+}
+
+.create-account a {
+    text-decoration: none;
+    color: purple;
+}

@@ -1,0 +1,35 @@
+.toast {
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    margin: auto;
+
+    max-width: 400px;
+    padding: 8px 20px;
+    background: whitesmoke;
+    border: 1px solid black;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
+    text-align: center;
+    font-size: 1.3rem;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.2s, top 0.2s, visibility 0.2s;
+}
+
+.toast-visible {
+    top: 40px;
+    visibility: visible;
+    opacity: 1;
+}
+
+.toast-success {
+    background: #00c02b;
+    border-color: #009d23;
+}
+
+.toast-error {
+    background: #d50000;
+    border-color: #ba0000;
+}
